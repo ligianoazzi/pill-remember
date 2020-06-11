@@ -1,0 +1,24 @@
+<hr>
+<h3>Insert you new schedule:</h3>
+<form method="post" #frm="ngForm" (ngSubmit)="criar(frm)">
+
+
+  <div class="form-group">
+    <label for="remedyName">Remedy / Vitamin</label>
+    <input type="text" id="remedyName" name="remedyName" [(ngModel)]="remedyName" class="form-control" placeholder="Enter the name">
+  </div>
+
+  <div class="form-group">
+    <label for="time">Time</label>
+    <input type="time" id="time" name="time" [(ngModel)]="time" class="form-control" placeholder="Time">
+  </div>
+
+  <button type="submit" class="btn btn-secondary">Save</button>
+
+
+</form>	
+
+<hr>
+<app-remedy-list><app-remedy-list>
+
+
